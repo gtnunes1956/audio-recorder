@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <StackLayout>
+    <ActivityIndicator color="#3489db" busy="{{ isRecording }}" />
+    <Button text="Start Recording" tap="start" />
+    <Button text="Stop Recording" tap="stop" />
+    <Button text="Pause Recording" tap="pause" />
+    <Button text="Resume Recording" tap="resume" />
+    <Button text="Play Recorded File" tap="getFile" />
+    <Label text="{{ recordedAudioFile }}" color="#3489db" textWrap="true" />
+  </StackLayout>
+</Page>
